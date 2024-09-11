@@ -1,0 +1,35 @@
+<app-navbar></app-navbar>
+<section class="team-section py-5">
+    <div class="container" *ngFor="let item of allDiary ">
+	    <div class="row justify-content-center">
+		    <div >
+                <!---->
+				<button type="button" class="btn btn-primary" style="width:200px" (click)="goToAdd()">+Add Diary</button>
+			    <div class="card border-0 shadow-lg pt-5 my-5 position-relative">
+				    <div class="card-body p-4">
+					    <div class="member-profile position-absolute w-100 text-center">
+					        <img class="rounded-circle mx-auto d-inline-block shadow-sm" src="https://play-lh.googleusercontent.com/kEvCkfWu-Ijx7beQ4RCNPjZGKcY9vf2XSfHlBvpOjs9CFPTWPFubia_YbYMaW2cJyQDR" alt="">
+						</div>
+						
+					    <div class="card-text pt-1">
+							<i class="fa fa-pencil" aria-hidden="true" (click)="goEdit(item.id)"></i>
+
+						    <h5 class="member-name mb-0 text-center text-primary font-weight-bold">{{item.title}}</h5>
+						    <div class="mb-3 text-center"><i class="fa fa-calendar" aria-hidden="true"></i>{{item.date}}</div>
+						    <div>{{item.entry}}</div>
+					    </div>
+				    </div><!--//card-body-->
+				 
+			    </div><!--//card-->
+            
+
+		    </div><!--//col-->
+		    
+	
+		    
+	
+	    </div><!--//row-->
+	    
+    </div>
+    
+</section>

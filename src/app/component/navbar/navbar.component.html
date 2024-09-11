@@ -1,0 +1,18 @@
+<nav class="navbar navbar-expand-lg navbar-primary bg-primary">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarText">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active " (click)="goToMain()">
+        <a class="nav-link" style="color:white"  ><i class="fa fa-home" aria-hidden="true"></i>Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item" (click)="goToDairy()">
+        <a class="nav-link" style="color:white"><i class="fa fa-calendar" aria-hidden="true"></i>Diary</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" style="color:white" (click)="goToAbout()"><i class="fa fa-user" aria-hidden="true"></i>About</a>
+      </li>
+    </ul>
+  </div>
+</nav>
